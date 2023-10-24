@@ -1,0 +1,57 @@
+#ifndef CLEAN_ROBOT_ENUM_TYPE_H
+#define CLEAN_ROBOT_ENUM_TYPE_H
+namespace common {
+enum ControlDir { GO_FRONT = 0, GO_BACK, TURN_RIGHT, TURN_LEFT };
+enum PixelMapType { UNKNOWN = 1, FREE = 2, OBSTACLE = 0 };
+enum GridMapType { GRID_MAP_UNKNOWN = -1, GRID_MAP_FREE = 0, GRID_MAP_OBSTANCE = 100, GRID_MAP_MARK = 150 };
+enum RoomType { ROOM_DIVISION = 0};
+
+enum FollowallStatus {
+  FOLLOWALL_PID = 0,
+  FOLLOWALL_TURN_ANGLE,
+  FOLLOWALL_GO_BACK,
+  FOllOWALL_FIND_WALL,
+  FOllOWALL_LINE_GOAL
+};
+
+enum ControlStatus {
+  CONTROL_INIT = 0,
+  CONTROL_PID,
+  CONTROL_TURN,
+  CONTROL_GO_BACK,
+  CONTROL_GO_FRONT,
+  CONTROL_TURN_GOAL
+};
+
+enum ControlFinishResult {
+  LP2P_SUCCESS = 0,
+  LP2P_FAIL,
+  GO_BACK_FRONT_SUCCESS,
+  GO_BACK_FRONT_FAIL,
+  NP2P_SUCCESS,
+  NP2P_FAIL,
+  AP2P_SUCCESS,
+  AP2P_FAIL,
+};
+
+
+enum ChainsMode {
+  COVER_MODE,
+  COVER_OTHER,
+};
+
+enum BlockEdgeType {
+  NULL_EDGE = 0,
+  RIGHT_EDGE,
+  UP_EDGE,
+  LEFT_EDGE,
+  DOWN_EDGE,
+  ROOM_DOOR,
+};
+
+enum EdgeNum { RIGHT_NUM = 0, UP_NUM, LEFT_NUM, DOWN_NUM, EDGE_NUM };
+
+enum ChainsCLoseResult { NORMAL_CHAINS_CLOSE = 0, ISOLATED_ISLAND_CHAINS, SMALL_CHAINS_CLOSE, HISTORY_CHAINS };
+
+}  // namespace common
+#endif  // CLEAN_ROBOT_ENUM_TYPE_H

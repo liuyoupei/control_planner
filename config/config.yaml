@@ -1,0 +1,65 @@
+##chains##
+chains_update_distance: 0.05
+chains_close_distance: 0.1
+
+###control###
+#ap2p#
+ap2p_p: 2.0
+ap2p_i: 0
+ap2p_d: 0.08
+arc_linear_x: 0.15
+p2p_max_vel: 2.4
+#followall#
+fw_p: 10
+fw_d: 5
+fw_max_speed_linear_x: 0.35
+fw_min_speed_linear_x: 0.25
+fw_slow_speed_angle: 1.75
+fw_go_back_time: 200
+fw_distance: 0.2
+#lp2p#
+lp2p_rotate_angular: 1.3
+lp2p_p: 10.0
+lp2p_i: 0.05
+lp2p_d: 5.0
+lp2p_slow_speed_min_distance: 0.22
+lp2p_slow_linear_x: 0.2
+lp2p_linear_x: 0.4
+#np2p#
+np2p_rotate_angular: 1.3
+np2p_p: 3.0
+np2p_i: 0.05
+np2p_d: 5.0
+np2p_slow_speed: 0.2
+np2p_max_linear_x: 0.35
+np2p_avoid_go_back_time: 200
+np2p_avoid_go_front_time: 200
+#p2p#
+p2p_go_linear_v: 0.3
+p2p_go_angular_z: 1.3
+
+###cover###
+cover_radius: 0.175
+
+###room###
+room_is_divided: false
+ratio: 64
+resolution: 0.05
+room_door_min_length: 0.5
+room_door_max_length: 1.8
+room_door_angle_delta: 10
+room_door_cluster_distance: 0.7
+room_door_min_area: 1.0
+
+###map###
+costmap_resolution: 0.05
+costmap_inscribed_radius:       0.19
+costmap_inflation_radius: 0.6
+costmap_weight: 15
+costmap_inflate_unknown: false
+
+###log###
+log_path: "/home/lyp/philips_clean_robot/src/control_planner/"
+
+
+
